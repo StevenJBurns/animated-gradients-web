@@ -7,5 +7,9 @@ html {
 }
 
 body {
-  
+ padding: 24px; 
+}
+
+button {
+  margin: 2px;
 }
