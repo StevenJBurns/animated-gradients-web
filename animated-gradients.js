@@ -10,6 +10,6 @@ $.getJSON("named-colors.json", (colors) => {
 $("#main-content").on("click", (e) => {
   e.stopPropagation();
   console.log($(e.target).data("color-hex"));
-  $("html").css("background-color", $(e.target).data("color-hex"));
-  console.log(this);
+  /* $("html").css("background-color", $(e.target).data("color-hex")); */
+  $("#main-content").animate({"background-color" : `${$(e.target).data("color-hex")}`}, 750);  
 });
