@@ -1,19 +1,45 @@
 * {
-
+  margin: 0;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 html {
-
+  background-color: #F7F7F7;
 }
 
 body {
- padding: 24px; 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  color: #F7F7F7;
+  background-color: #272727;
 }
 
 header h1, header h2 {
-  
+
+}
+
+main {
+  padding: 24px;
+  flex: 1;
 }
 
 button {
   margin: 2px;
+}
+
+footer {
+  color: #FDFDFD;
+  text-align: center;  
+  background-color: #272727;
+}
+
+footer nav {
+  padding: 12px;
+  display: inline-block;
 }
