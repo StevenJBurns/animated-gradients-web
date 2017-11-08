@@ -10,6 +10,10 @@ body {
  padding: 24px; 
 }
 
+header h1, header h2 {
+  
+}
+
 button {
   margin: 2px;
 }
