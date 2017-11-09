@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  font-family: Roboto, Oxygen, Ubuntu, 'Helvetica Neue', 'Segoe UI';
 }
 
 html {
@@ -16,12 +17,13 @@ body {
 }
 
 header {
+  padding: 16px;
   color: #F7F7F7;
   background-color: #272727;
 }
 
 header h1, header h2 {
-
+  display: inline-block;
 }
 
 main {
@@ -29,7 +31,8 @@ main {
   flex: 1;
 }
 
-button {
+.color-button {
+  width: 120px;
   margin: 2px;
 }
 
@@ -42,4 +45,9 @@ footer {
 footer nav {
   padding: 12px;
   display: inline-block;
+}
+
+a .fa, a:visited .fa {
+  margin-left: 12px;
+  margin-right: 12px;
 }
