@@ -18,8 +18,8 @@ body {
 
 header {
   padding: 16px;
-  color: #F7F7F7;
-  background-color: #272727;
+  color: #F0F0F0;
+  background-color: #0F0F0F;
 }
 
 header h1, header h2 {
@@ -32,14 +32,14 @@ main {
 }
 
 .color-button {
-  width: 120px;
+  width: 128px;
   margin: 2px;
 }
 
 footer {
   color: #FDFDFD;
   text-align: center;  
-  background-color: #272727;
+  background-color: #0F0F0F;
 }
 
 footer nav {
