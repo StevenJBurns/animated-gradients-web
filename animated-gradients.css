@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #F7F7F7;
+  background-color: #2F2F2F;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 header {
   padding: 16px;
   color: #F0F0F0;
-  background-color: #0F0F0F;
+  background-color: #2F2F2F;
 }
 
 header h1, header h2 {
@@ -28,7 +28,16 @@ header h1, header h2 {
 
 main {
   padding: 24px;
+  /* -webkit-mask-image: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0) 75%, rgba(0,0,0,1));   */
   flex: 1;
+}
+
+#current-color-label {
+  text-align: center;
+}
+
+hr {
+  margin: 4px;
 }
 
 .color-button {
@@ -39,7 +48,7 @@ main {
 footer {
   color: #FDFDFD;
   text-align: center;  
-  background-color: #0F0F0F;
+  background-color: #2F2F2F;
 }
 
 footer nav {
