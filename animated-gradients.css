@@ -7,10 +7,11 @@
 }
 
 html {
-  background-color: #2F2F2F;
+  /* background-color: #2F2F2F; */
 }
 
 body {
+  background: linear-gradient(transparent, #F2F2F2);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -27,8 +28,9 @@ header h1, header h2 {
 }
 
 main {
-  padding: 24px;
-  /* -webkit-mask-image: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0) 75%, rgba(0,0,0,1));   */
+  width: 80%;
+  margin: auto;
+  text-align: center;
   flex: 1;
 }
 
@@ -56,7 +58,9 @@ footer nav {
   display: inline-block;
 }
 
-a .fa, a:visited .fa {
+a .fa,
+a:visited .fa {
   margin-left: 12px;
   margin-right: 12px;
+  color: #5555FF;
 }

@@ -15,15 +15,17 @@ $.getJSON("named-colors.json")
     let randomizedIndex = Math.floor(Math.random() * (colorKeys.length));
     let randomizedColor = colorKeys[randomizedIndex];
     selectedColor = randomizedColor;    
-    $("html").css("background-color", `${[randomizedColor]}`);
+    $("html").css("background", `linear-gradient(transparent, #000000), ${[randomizedColor]}`);
     $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex} \&bull; ${selectedColor}`);    
-  });
+  })
+  .then(() => {
+    $(".color-button").on("click", (e) => {
+      selectedColor = $(e.target).html();
+      selectedColorHex = $(e.target).data("color-hex")
+      
+      $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex} \&bull; ${selectedColor}`);
+      $("html").animate({"background-color" : `${selectedColorHex}`}, 500);
+    });
+  }) ;
 
-$("#main-content").on("click", (e) => {
-  selectedColor = $(e.target).html();
-  selectedColorHex = $(e.target).data("color-hex")
 
-  e.stopPropagation();
-  $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex} \&bull; ${selectedColor}`);
-  $("html").animate({"background-color" : `${selectedColorHex}`}, 500);
-});
