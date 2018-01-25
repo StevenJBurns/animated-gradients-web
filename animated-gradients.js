@@ -19,7 +19,7 @@ $.getJSON("named-colors.json")
 
     $("body").css("background", `${[randomizedColor]}`);
     $("main").css("background", `linear-gradient(transparent, #F0F0F0), ${[randomizedColor]}`);
-    $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);    
+    $("#current-color-label").html(`Current Color : ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);    
   })
   .then(() => {
     $(".color-button").on("click", (e) => {
