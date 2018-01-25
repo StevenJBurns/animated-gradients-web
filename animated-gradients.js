@@ -26,7 +26,7 @@ $.getJSON("named-colors.json")
       selectedColor = $(e.target).html();
       selectedColorHex = $(e.target).data("color-hex")
       
-      $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);
+      $("#current-color-label").html(`Current Color : ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);
       $("body").animate({"background-color" : `${selectedColorHex}`}, 500);
       $("main").animate({"background-color" : `${selectedColorHex}`}, 500);
     });
