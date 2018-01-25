@@ -14,17 +14,21 @@ $.getJSON("named-colors.json")
     let colorKeys = Object.keys(colors);
     let randomizedIndex = Math.floor(Math.random() * (colorKeys.length));
     let randomizedColor = colorKeys[randomizedIndex];
-    selectedColor = randomizedColor;    
-    $("html").css("background", `linear-gradient(transparent, #000000), ${[randomizedColor]}`);
-    $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex} \&bull; ${selectedColor}`);    
+    selectedColor = randomizedColor;
+    selectedColorHex = colors[selectedColor];
+
+    $("body").css("background", `${[randomizedColor]}`);
+    $("main").css("background", `linear-gradient(transparent, #F0F0F0), ${[randomizedColor]}`);
+    $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);    
   })
   .then(() => {
     $(".color-button").on("click", (e) => {
       selectedColor = $(e.target).html();
       selectedColorHex = $(e.target).data("color-hex")
       
-      $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex} \&bull; ${selectedColor}`);
-      $("html").animate({"background-color" : `${selectedColorHex}`}, 500);
+      $("#current-color-label").html(`Current Color \&bull; ${selectedColorHex.toUpperCase()} \&bull; ${selectedColor}`);
+      $("body").animate({"background-color" : `${selectedColorHex}`}, 500);
+      $("main").animate({"background-color" : `${selectedColorHex}`}, 500);
     });
   }) ;
 
