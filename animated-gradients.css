@@ -26,13 +26,13 @@ main {
   margin: 4px;
 }
 
-a .fa,
-a:visited .fa {
-  margin: 0 12px;
+a .fab,
+a:visited .fab {
+  padding: 12px 0;
   color: #5555FF;
   transition: color 0.15s ease-in;
 }
 
-a:hover .fa {
+a:hover .fab {
   color: #F0F0F0;
 }
