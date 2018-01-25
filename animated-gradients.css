@@ -6,59 +6,20 @@
   font-family: Roboto, Oxygen, Ubuntu, 'Helvetica Neue', 'Segoe UI';
 }
 
-html {
-  /* background-color: #2F2F2F; */
-}
-
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-header {
-  padding: 16px;
-  color: #F0F0F0;
-  background-color: #2F2F2F;
-}
-
-header h1, header h2 {
-  display: inline-block;
-}
-
 main {
-  width: 80%;
-  margin: auto;
-  padding: 32px 0;
   text-align: center;
   flex: 1;
 }
 
-#current-color-label {
-  padding: 8px;
-  color: #F0F0F0;
-  background-color: #4F4F4F;
-  text-align: center;
-}
-
-hr {
-  margin: 8px;
-}
-
-.color-button {
-  width: 128px;
+.btn {
+  width: 240px;
   margin: 2px;
-}
-
-footer {
-  color: #FDFDFD;
-  text-align: center;  
-  background-color: #2F2F2F;
-}
-
-footer nav {
-  padding: 12px;
-  display: inline-block;
 }
 
 a .fa,
@@ -66,11 +27,9 @@ a:visited .fa {
   margin-left: 12px;
   margin-right: 12px;
   color: #5555FF;
-  transition: all 0.15s ease-in;
+  transition: color 0.15s ease-in;
 }
 
 a:hover .fa {
   color: #F0F0F0;
-
-
 }

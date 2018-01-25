@@ -5,7 +5,7 @@ let selectedColor, selectedColorHex;
 $.getJSON("named-colors.json")
   .then((colors) => {
     for (let key in colors) {
-      let newButton = `<button class="color-button" data-color-hex="${colors[key]}">${key}</button>`;
+      let newButton = `<a class="btn waves-effect waves-dark blue-grey lighten-5 blue-grey-text text-darken-4 color-button" data-color-hex="${colors[key]}">${key}</a>`;
       $("#main-content").append(newButton);
     }
     return colors;
