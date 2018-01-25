@@ -1,9 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  font-family: Roboto, Oxygen, Ubuntu, 'Helvetica Neue', 'Segoe UI';
+  font-family: Nunito, Roboto, Oxygen, Ubuntu, 'Helvetica Neue', 'Segoe UI';
 }
 
 body {
@@ -12,20 +10,25 @@ body {
   flex-direction: column;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 8px;
+}
+
 main {
+  padding: 24px 0;
   text-align: center;
   flex: 1;
 }
 
 .btn {
   width: 240px;
-  margin: 2px;
+  margin: 4px;
 }
 
 a .fa,
 a:visited .fa {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 0 12px;
   color: #5555FF;
   transition: color 0.15s ease-in;
 }
