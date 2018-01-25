@@ -26,13 +26,20 @@ main {
   margin: 4px;
 }
 
-a .fab,
-a:visited .fab {
-  padding: 12px 0;
-  color: #5555FF;
+footer {
+  padding: 24px;
+}
+
+footer span {
+  padding: 0 12px;
+}
+
+footer a,
+footer a:visited {
+  color: #6495ED;
   transition: color 0.15s ease-in;
 }
 
-a:hover .fab {
+footer a:hover {
   color: #F0F0F0;
 }
