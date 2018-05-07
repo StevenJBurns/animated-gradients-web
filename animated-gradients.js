@@ -31,5 +31,3 @@ $.getJSON("named-colors.json")
       $("main").animate({"background-color" : `${selectedColorHex}`}, 500);
     });
   }) ;
-
-

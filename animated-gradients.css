@@ -34,7 +34,7 @@ footer span {
   padding: 0 12px;
 }
 
-footer a,
+footer a:link,
 footer a:visited {
   color: #00BFFF;
   transition: color 0.15s ease-in;
