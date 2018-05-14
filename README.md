@@ -1,3 +1,4 @@
+<img />
 <h1 align="center">animated-gradients</h1>
 
 One of my original simple programming ideas rewritten as an HTML web page. 
