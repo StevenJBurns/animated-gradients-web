@@ -10,6 +10,7 @@ One of my original simple programming ideas rewritten as an HTML web page.
 
 There's nothing too crazy behind this project.  The approach is no different than what a novice web developer would learn in the first few weeks of an educational course.  Some features are relatively new and more "modern" :
 * Layout via flexbox
+* Selected Materialize CSS styles
 * Semantic HTML5 tags
   * main
   * header
